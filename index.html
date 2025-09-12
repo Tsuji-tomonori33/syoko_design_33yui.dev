@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>獅子島スタンプラリー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐾 獅子島スタンプラリー 🐾</h1>
+  <p>QRコードを読み取ってスタンプを集めよう！</p>
+
+  <div class="stamp-book">
+    <div class="stamp" id="stamp1">スポット1</div>
+    <div class="stamp" id="stamp2">スポット2</div>
+    <div class="stamp" id="stamp3">スポット3</div>
+  </div>
+
+  <p id="complete-message" style="display:none; color:green; font-weight:bold;">
+    🎉 全スタンプコンプリート！おめでとう！ 🎉
+  </p>
+
+  <script>
+    // localStorageから進捗を取得して反映
+    function loadStamps() {
+      let complete = true;
+      for (let i = 1; i <= 3; i++) {
+        if (localStorage.getItem("stamp" + i) === "get") {
+          document.getElementById("stamp" + i).classList.add("got");
+        } else {
+          complete = false;
+        }
+      }
+      if (complete) {
+        document.getElementById("complete-message").style.display = "block";
+      }
+    }
+    loadStamps();
+  </script>
+</body>
+</html>
