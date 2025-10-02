@@ -6,8 +6,7 @@ body {
 }
 
 .index-page {
-  /* mimi.jpg を images/backgrounds/ に置く想定 */
-  background: url("images/backgrounds/mimi.JPG") no-repeat center center;
+  background: url("images/backgrounds/mimi.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   min-height: 100vh;
@@ -37,4 +36,8 @@ body {
 .spot-bg img {
   max-width: 90%;
   border-radius: 10px;
+}
+
+.got {
+  opacity: 0.5; /* 獲得済みは半透明に見せる */
 }
