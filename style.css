@@ -13,18 +13,31 @@ body {
 }
 
 .stamp-board {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  position: relative;  /* ドラッグ可能にする */
+  width: 100%;
+  height: 80vh;
+  margin-top: 20px;
 }
 
-.stamp {
-  margin: 10px;
-}
-
-.stamp img {
+.stamp-slot {
   width: 120px;
+  height: 120px;
+  border: 2px dashed white;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: grab;
+}
+
+.stamp-slot:active {
+  cursor: grabbing;
+}
+
+.stamp-slot img {
+  width: 100px;
   height: auto;
 }
 
@@ -39,5 +52,5 @@ body {
 }
 
 .got {
-  opacity: 0.5; /* 獲得済みは半透明に見せる */
+  opacity: 0.5;
 }
