@@ -7,15 +7,19 @@
 </head>
 <body class="index-page">
   <h1>🐾 獅子島スタンプラリー 🐾</h1>
+  <p>QRコードを読み取ってスタンプを集めよう！</p>
 
   <div class="stamp-board">
-    <!-- 5つのスタンプ -->
-    <div class="stamp"><img id="stamp1" src="images/stamps/stamp1.png" alt="スタンプ1"></div>
-    <div class="stamp"><img id="stamp2" src="images/stamps/stamp2.png" alt="スタンプ2"></div>
-    <div class="stamp"><img id="stamp3" src="images/stamps/stamp3.png" alt="スタンプ3"></div>
-    <div class="stamp"><img id="stamp4" src="images/stamps/stamp4.png" alt="スタンプ4"></div>
-    <div class="stamp"><img id="stamp5" src="images/stamps/stamp5.png" alt="スタンプ5"></div>
+    <div class="stamp-slot" id="slot1"><img id="stamp1" src="images/stamps/stamp1.png" alt="スタンプ1"></div>
+    <div class="stamp-slot" id="slot2"><img id="stamp2" src="images/stamps/stamp2.png" alt="スタンプ2"></div>
+    <div class="stamp-slot" id="slot3"><img id="stamp3" src="images/stamps/stamp3.png" alt="スタンプ3"></div>
+    <div class="stamp-slot" id="slot4"><img id="stamp4" src="images/stamps/stamp4.png" alt="スタンプ4"></div>
+    <div class="stamp-slot" id="slot5"><img id="stamp5" src="images/stamps/stamp5.png" alt="スタンプ5"></div>
   </div>
+
+  <p id="complete-message" style="display:none; color:green; font-weight:bold;">
+    🎉 全スタンプコンプリート！おめでとう！ 🎉
+  </p>
 
   <script src="script.js"></script>
 </body>
