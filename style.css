@@ -6,7 +6,7 @@ body {
 }
 
 .index-page {
-  background: url("images/backgrounds/mimi.JPG") no-repeat center center;
+  background: url("images/backgrounds/mimi.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   min-height: 100vh;
