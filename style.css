@@ -13,21 +13,21 @@ body {
 }
 
 .stamp-board {
-  position: relative; /* ドラッグ用に必須 */
+  position: relative;
   width: 100%;
   height: 80vh;
   margin-top: 20px;
 }
 
 .stamp-slot {
-  width: 120px;
-  height: 120px;
-  border: 2px dashed white;
-  border-radius: 10px;
-  position: absolute; /* 絶対座標で移動 */
+  width: 12%;
+  max-width: 120px;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px dashed white;
+  border-radius: 10px;
   background-color: rgba(255,255,255,0.1);
   cursor: grab;
 }
@@ -37,6 +37,6 @@ body {
 }
 
 .stamp-slot img {
-  width: 100px;
+  width: 100%;
   height: auto;
 }
