@@ -20,9 +20,10 @@ body {
 }
 
 .stamp-slot {
-  width: 12%;
-  max-width: 120px;
-  position: absolute;
+  width: 12%;           /* 横幅は画面幅に応じて変化 */
+  aspect-ratio: 1 / 1;   /* 縦横比1:1で正方形を維持 */
+  max-width: 120px;      /* 最大サイズ */
+  position: absolute;     /* 左右・上下はpxでドラッグ可能 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +38,6 @@ body {
 }
 
 .stamp-slot img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
