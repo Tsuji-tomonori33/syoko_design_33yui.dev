@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const board = document.querySelector(".stamp-board");
-  const boardRect = board.getBoundingClientRect();
   const slots = document.querySelectorAll(".stamp-slot");
 
   slots.forEach(slot => {
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.removeEventListener("mousemove", onMouseMove);
         document.removeEventListener("mouseup", onMouseUp);
 
-        // %座標計算
         const leftPercent = ((slot.offsetLeft / board.clientWidth) * 100).toFixed(2);
         const topPercent = ((slot.offsetTop / board.clientHeight) * 100).toFixed(2);
 
